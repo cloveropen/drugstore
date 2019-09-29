@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-app id="drugstore.cloveropen.com">
+    <Basepage />
+    <v-container fluid>
+      <v-layout justify-start>
+        <v-img :src="require('../assets/main_bg.jpg')" />
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import Basepage from "../components/Basepage";
 export default {
-  name: "home",
   components: {
-    HelloWorld
+    Basepage
   }
 };
 </script>
